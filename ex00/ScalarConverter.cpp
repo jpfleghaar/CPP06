@@ -6,7 +6,7 @@
 /*   By: Jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/10 15:36:33 by Jpflegha          #+#    #+#             */
-/*   Updated: 2026/06/10 16:14:54 by Jpflegha         ###   ########.fr       */
+/*   Updated: 2026/06/10 16:17:11 by Jpflegha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ static void printResults(double value, bool nanFlag, bool posInf, bool negInf)
     else if(posInf)
         std::cout << "+inff";
     else if(negInf)
-        std::cout << "-inff";
+    	std::cout << "-inff";
 	else
     {
         float f = static_cast<float>(value);
@@ -90,7 +90,7 @@ static void printResults(double value, bool nanFlag, bool posInf, bool negInf)
         oss << f;
         std::string text = oss.str();
 		// Only add .0 if the text is a plain whole number — not if it already has a dot, an e (scientific notation), or is inf/nan.
-        if (text.find('.') == std::string::npos && text.find('e') == std::string::npos
+        if(text.find('.') == std::string::npos && text.find('e') == std::string::npos
             && text.find("inf") == std::string::npos && text.find("nan") == std::string::npos)
             text += ".0";
         std::cout << text << "f";
@@ -111,7 +111,7 @@ static void printResults(double value, bool nanFlag, bool posInf, bool negInf)
         oss << value;
         std::string text = oss.str();
 		// Only add .0 if the text is a plain whole number — not if it already has a dot, an e (scientific notation), or is inf/nan.
-    	if (text.find('.') == std::string::npos && text.find('e') == std::string::npos
+    	if(text.find('.') == std::string::npos && text.find('e') == std::string::npos
             && text.find("inf") == std::string::npos && text.find("nan") == std::string::npos)
             text += ".0";
         std::cout << text;
