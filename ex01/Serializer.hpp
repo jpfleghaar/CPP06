@@ -22,12 +22,10 @@ class Serializer
         static uintptr_t serialize(Data *ptr);
         static Data *deserialize(uintptr_t raw);
 
-    private:
-        // Not implemented: this class only has static functions.
-        Serializer();
-        Serializer(const Serializer &other);
-        Serializer &operator=(const Serializer &other);
-        ~Serializer();
+        Serializer() = delete;
+        Serializer(const Serializer &other)  = delete;
+        Serializer &operator=(const Serializer & other) = delete;
+        ~Serializer() = delete;
 };
 
 #endif
