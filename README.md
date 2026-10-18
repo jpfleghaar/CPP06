@@ -1,6 +1,6 @@
 # C++ Module 06 — C++ casts
 
-Scalar type conversion, pointer serialization and runtime type identification with the four C++ casts (C++98).
+Scalar type conversion, pointer serialization and runtime type identification with the four C++ casts.
 
 *This project was created as part of the 42 curriculum by jpflegha.*
 
@@ -41,7 +41,7 @@ float: 97.0f
 double: 97.0
 ```
 
-Each exercise has its own Makefile (`c++ -Wall -Wextra -Werror -std=c++98`).
+Each exercise has its own Makefile (`c++ -Wall -Wextra -Werror -std=c++17`).
 
 ## Project structure
 
